@@ -1,0 +1,101 @@
+print("=======================================================================")
+
+StudentName = input("Enter Name: ")
+ClassYear = input("Enter Year: ")
+ClassSemester = input("Enter Semester: ")
+
+
+print("===================== Enter Marks Obtained ============================")
+
+subject1 = float(input("Enter English Marks: "))
+subject2 = float(input("Enter Computer Marks: "))
+subject3 = float(input("Enter Maths Marks: "))
+subject4 = float(input("Enter Physics Marks: "))
+subject5 = float(input("Enter Urdu Marks: "))
+
+print("========================== Data Acquired =============================")
+
+maxmarks = 100
+
+print("=======================================================================")
+
+Gradepassed = bool
+
+if subject1 > 50 and subject2 > 50 and subject3 > 50 and subject4 > 50 and subject5 > 50:
+    Gradepassed = True
+
+percentage_ = ((subject1 + subject2 + subject3 + subject4 + subject5)/(maxmarks*5)) * 100
+percentage = int(percentage_)
+
+Totalgrade = ""
+
+if percentage > 89:
+    Totalgrade = "A+"
+
+elif 90 > percentage > 79:
+    Totalgrade = "A" 
+
+elif 80 > percentage > 69:
+    Totalgrade = "B" 
+
+elif 70 > percentage > 59:
+    Totalgrade = "C" 
+
+elif 60 > percentage > 49:
+    Totalgrade = "D" 
+
+else:
+    Totalgrade = "F"
+
+print("                                                                       ")
+print("                                                                       ")
+
+print("------------------------ Mark Sheet -----------------------------------")
+print("=======================================================================")
+print("                                                                       ")
+
+print("Name: ", StudentName)
+
+print("                                                                       ")
+
+print("Year: " + ClassYear)
+
+print("                                                                       ")
+
+print("Semster: " + ClassSemester)
+
+print("                                                                       ")
+
+if Gradepassed == True:
+    print("Semester Cleared with Grade: ", Totalgrade)
+else: 
+    print("Semester Failed. Overall Grade: ", Totalgrade)
+    
+print("                                                                       ")
+
+print("Percentage: "+ str(format(percentage_, '.2f')) + "%")
+
+print("                                                                       ")
+print("...................................................................... ")
+print("                                                                       ")
+
+print("English Marks: ", subject1)
+
+print("                                                                       ")
+
+print("Computer Marks: ", subject2)
+
+print("                                                                       ")
+
+print("Maths Marks: ", subject3)
+
+print("                                                                       ")
+
+print("Physics Marks: ", subject4)
+
+print("                                                                       ")
+
+print("Urdu Marks: ", subject5)
+
+print("                                                                       ")
+print("========================== The End ====================================")
