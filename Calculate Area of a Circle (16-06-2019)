@@ -2,6 +2,6 @@ Radius = input("Input Radius: ")
 
 RadiusSquare = float(Radius) * float(Radius)
 
-Area = 3.141592654 * CalculateRadius
+Area = 3.141592654 * RadiusSquare
 
 print("Area of Circle with radius", Radius, "is", Area)
