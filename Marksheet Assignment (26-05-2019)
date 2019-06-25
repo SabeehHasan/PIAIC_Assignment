@@ -24,8 +24,8 @@ Gradepassed = bool
 if subject1 > 50 and subject2 > 50 and subject3 > 50 and subject4 > 50 and subject5 > 50:
     Gradepassed = True
 
-percentage_ = ((subject1 + subject2 + subject3 + subject4 + subject5)/(maxmarks*5)) * 100
-percentage = int(percentage_)
+percentage = ((subject1 + subject2 + subject3 + subject4 + subject5)/(maxmarks*5)) * 100
+percentage = int(percentage)
 
 Totalgrade = ""
 
@@ -73,7 +73,7 @@ else:
     
 print("                                                                       ")
 
-print("Percentage: "+ str(format(percentage_, '.2f')) + "%")
+print("Percentage: "+ str(format(percentage, '.2f')) + "%")
 
 print("                                                                       ")
 print("...................................................................... ")
